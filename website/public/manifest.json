@@ -1,0 +1,44 @@
+{
+  "id": "vanguard-dtc-pwa-app",
+  "name": "Vanguard DTC | E-Commerce Performance Marketing Agency",
+  "short_name": "Vanguard DTC",
+  "description": "Full-funnel Google & Meta Ads Performance Marketing Agency for Shopify DTC Brands",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#080C14",
+  "theme_color": "#4F46E5",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "ROAS Simulator",
+      "short_name": "Simulator",
+      "description": "Calculate incremental DTC revenue and gross margin",
+      "url": "./#calculator",
+      "icons": [{ "src": "./icon.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Claim 45-Pt Audit",
+      "short_name": "Free Audit",
+      "description": "Submit store for senior media buyer inspection",
+      "url": "./#audit",
+      "icons": [{ "src": "./icon.svg", "sizes": "192x192" }]
+    }
+  ],
+  "categories": ["business", "marketing", "finance", "productivity"],
+  "prefer_related_applications": false
+}

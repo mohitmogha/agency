@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
+    <title>Vanguard DTC | Google & Meta Ads Scale Partner</title>
+    <meta name="description" content="Next-generation E-Commerce & DTC Performance Agency scaling Shopify brands with Meta ASC, Google PMax, and CAPI attribution." />
+    
+    <!-- PWA Settings & Mobile Native Optimization -->
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <link rel="apple-touch-icon" href="./icon.svg" />
+    <meta name="theme-color" content="#4F46E5" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Vanguard DTC" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+      // Register PWA Service Worker
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js').catch((err) => {
+            console.log('SW registration error: ', err);
+          });
+        });
+      }
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-[#080C14] dark:text-slate-100 min-h-screen antialiased selection:bg-indigo-500 selection:text-white transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>

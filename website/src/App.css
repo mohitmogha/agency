@@ -1,0 +1,4 @@
+/* Custom animations and base resets */
+html {
+  scroll-behavior: smooth;
+}
